@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>小游戏集合</title>  
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}  
+  
+header {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 1rem 0;  
+    text-align: center;  
+}  
+  
+nav {  
+    background-color: #444;  
+    color: #fff;  
+    padding: 0.5rem;  
+    text-align: center;  
+}  
+  
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+    display: flex;  
+    justify-content: center;  
+}  
+  
+nav li {  
+    margin: 0 1rem;  
+}  
+  
+nav a {  
+    color: #fff;  
+    text-decoration: none;  
+}  
+  
+nav a:hover {  
+    text-decoration: underline;  
+}  
+  
+main {  
+    padding: 2rem;  
+    text-align: center;  
+}  
+  
+footer {  
+    background-color: #333;  
+    color: #fff;  
+    text-align: center;  
+    padding: 1rem 0;  
+    position: fixed;  
+    width: 100%;  
+    bottom: 0;  
+}
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <h1>欢迎来到小游戏集合</h1>  
+    </header>  
+    <nav>  
+        <ul>  
+            <li><a href="https://duanfeihe.github.io/Webgame/Fishing-Joy/index.html" onclick="trackGameClick('游戏1')">捕鱼达人</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/JumpBird/index.html" onclick="trackGameClick('游戏2')">跳动的小鸟</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/PlantsVSZombie/index.html" onclick="trackGameClick('游戏3')">植物大战僵尸</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/SuperMarioJs/index.html" onclick="trackGameClick('游戏4')">超级玛丽</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/aimAndShoot/index.html" onclick="trackGameClick('游戏5')">射击游戏</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/Tetris/index.html" onclick="trackGameClick('游戏6')">俄罗斯方块</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/civitas/index.html" onclick="trackGameClick('游戏7')">市民</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/snake/index.html" onclick="trackGameClick('游戏8')">贪吃蛇</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/minesweeper/index.html" onclick="trackGameClick('游戏9')">黄金矿工</a></li>  
+            <li><a href="https://duanfeihe.github.io/Webgame/Tower_game/index.html" onclick="trackGameClick('游戏10')">城防游戏</a></li>  
+        </ul>  
+    </nav>  
+    <main>  
+        <p>点击上面的链接开始玩小游戏吧！</p>  
+    </main>  
+    <footer>  
+        <p>&copy; 2023 小游戏集合. 版权所有.</p>  
+    </footer>  
+    <script src="script.js"></script>  
+    <script>
+        function trackGameClick(gameName) {  
+    // 这里可以添加代码来跟踪游戏点击事件，比如发送到服务器或使用console.log记录  
+    console.log(`用户点击了游戏: ${gameName}`);  
+      
+    // 阻止默认的链接跳转行为（因为我们使用的是#作为占位符）  
+    event.preventDefault();  
+      
+    // 如果你有实际的游戏链接，可以在这里进行跳转  
+    // 例如：window.location.href = 'https://example.com/game1';  
+      
+    // 由于我们没有实际的游戏链接，这里仅展示点击日志  
+    alert(`请替换链接后访问游戏: ${gameName}`);  
+}  
+  
+// 注意：由于我们在HTML中使用了onclick属性，因此不需要在JavaScript中为每个链接添加事件监听器
+    </script>
+</body>  
+</html>
